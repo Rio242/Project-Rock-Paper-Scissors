@@ -9,7 +9,17 @@
 
 
 function getComputerChoice(selection){
-    return Math.ceil(Math.random()*selection)
+    computerChoice = Math.ceil(Math.random()*selection)
+    if (computerChoice === 1){
+         return 'Rock'
+    }
+    else if (computerChoice === 2){
+         return 'Paper'
+    }
+    else if (computerChoice === 3){
+         return 'Scissors'
+    }
+   
 }
 
-console.log(getComputerChoice())
+console.log(getComputerChoice(3))
