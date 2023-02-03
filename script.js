@@ -24,16 +24,24 @@ function getComputerChoice(selection){
 
 getComputerChoice(3)
 
+function player(){
+    return
+}
+
 function singleRound(playSelection, computerSelection){
     var computerSelection = getComputerChoice(3)
     const playerSelection = prompt("Please select  rock paper or scissors")
-    // if statements for multiple scenarios 
+    //user input checker
+    const playerSelectionFinal = playerSelection.toLowerCase()
+     
+    
+    // if statements for multiple round scenarios 
     if (){
-        return console.log("You lost" + computerSelection + "beats"+ playerSelection)
+        return "You lost" + computerSelection + "beats"+ playerSelectionFinal
     }
 
     else if(){
-        return console.log("You lost" + computerSelection + "beats"+ playerSelection)
+        return "You lost" + computerSelection + "beats"+ playerSelectionFinal
     }
     
 }
