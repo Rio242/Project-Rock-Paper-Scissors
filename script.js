@@ -22,4 +22,18 @@ function getComputerChoice(selection){
    
 }
 
-console.log(getComputerChoice(3))
+getComputerChoice(3)
+
+function singleRound(playSelection, computerSelection){
+    var computerSelection = getComputerChoice(3)
+    const playerSelection = prompt("Please select  rock paper or scissors")
+    // if statements for multiple scenarios 
+    if (){
+        return console.log("You lost" + computerSelection + "beats"+ playerSelection)
+    }
+
+    else if(){
+        return console.log("You lost" + computerSelection + "beats"+ playerSelection)
+    }
+    
+}
