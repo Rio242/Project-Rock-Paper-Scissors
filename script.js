@@ -24,31 +24,47 @@ function getComputerChoice(selection){
    
 }
 
-getComputerChoice(3)
 
-function player(){
+
+function playerSelection(){
+    
     return
 }
 
 function singleRound(playerSelection, computerSelection){
-    let computerSelection = getComputerChoice(3)
-    let playerSelection = prompt("Please select  rock paper or scissors")
+    
     //user input checker
-    let playerSelectionFinal = playerSelection.toLowerCase()
-     
+    let playerSelectionLower = playerSelection.toLowerCase()
+    let firstLetter = playerSelection.slice(0,1) 
+
+    playerSelection = firstLetter + playerSelectionLower.slice(1)
     
     // if statements for multiple round scenarios 
-    if (){
-        return "You lost" + computerSelection + "beats"+ playerSelectionFinal
+    if (playerSelection === 'Rock' && computerSelection === 'Paper'){
+        return "You lost" + computerSelection + "beats"+ playerSelection
     }
 
-    else if(){
-        return "You lost" + computerSelection + "beats"+ playerSelectionFinal
+    else if(playerSelection === 'Rock' && computerSelection === 'Scissors'){
+        return "You won" + computerSelection + "losses to"+ playerSelection
     }
-    
+    else if(playerSelection === 'Scissors' && computerSelection === 'Rock'){
+        return "You lost" + computerSelection + "beats"+ playerSelection
+    }
+    else if(playerSelection === 'Scissors' && computerSelection === 'Paper'){
+        return "You won" + computerSelection + "loses to"+ playerSelection
+    }
+    else if(playerSelection === 'Paper' && computerSelection === 'Scissors'){
+        return "You lost" + computerSelection + "beats"+ playerSelection
+    }
+    else if(playerSelection === 'Paper' && computerSelection === 'Rock'){
+        return "You won" + computerSelection + "losses"+ playerSelection
+    }
+    else
+        return "Try again"
 }
 
-
+const computerSelection = getComputerChoice(3)
+const playerSelection = 'Rock' //prompt("Please select  rock paper or scissors")
 
 
 
@@ -60,8 +76,9 @@ const computerScore = 0 ;
 function game(){
     
     for (let i=0; i<5;i++){
-        singleRound()
+        singleRound('Rock', getComputerChoice(3))
         if 
     }
     
 }
+
