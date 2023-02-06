@@ -1,9 +1,11 @@
-// 1. make random number generator function between 1 and 3
+// 1. make random number generator function between 1 and 3 to randomize computer choice
 
 // 2.
 
 //3. 
 
+
+//note 
 
 
 
@@ -28,11 +30,11 @@ function player(){
     return
 }
 
-function singleRound(playSelection, computerSelection){
-    var computerSelection = getComputerChoice(3)
-    const playerSelection = prompt("Please select  rock paper or scissors")
+function singleRound(playerSelection, computerSelection){
+    let computerSelection = getComputerChoice(3)
+    let playerSelection = prompt("Please select  rock paper or scissors")
     //user input checker
-    const playerSelectionFinal = playerSelection.toLowerCase()
+    let playerSelectionFinal = playerSelection.toLowerCase()
      
     
     // if statements for multiple round scenarios 
@@ -42,6 +44,24 @@ function singleRound(playSelection, computerSelection){
 
     else if(){
         return "You lost" + computerSelection + "beats"+ playerSelectionFinal
+    }
+    
+}
+
+
+
+
+
+// 
+const playerScore = 0
+const computerScore = 0 ;
+
+
+function game(){
+    
+    for (let i=0; i<5;i++){
+        singleRound()
+        if 
     }
     
 }
