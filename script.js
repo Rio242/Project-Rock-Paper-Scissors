@@ -1,15 +1,15 @@
 // 1. make random number generator function between 1 and 3 to randomize computer choice
 
-// 2.
+// 2. Create function to exexuate a round and returns results 
 
-//3. 
+//3. Use results from round in game function that allows function to keep score 
 
 
 //note 
 
 
 
-
+// 
 function getComputerChoice(selection){
     computerChoice = Math.ceil(Math.random()*selection)
     if (computerChoice === 1){
@@ -26,10 +26,10 @@ function getComputerChoice(selection){
 
 
 
-function playerSelection(){
+//function playerSelection(){
     
-    return
-}
+ //   return
+//}
 
 function singleRound(playerSelection, computerSelection){
     
@@ -63,12 +63,13 @@ function singleRound(playerSelection, computerSelection){
         return "Try again"
 }
 
+//Declare computer and user choices
 const computerSelection = getComputerChoice(3)
-const playerSelection = 'Rock' //prompt("Please select  rock paper or scissors")
+const playerSelection = prompt("Please select  rock paper or scissors")
 
 
 
-// 
+// Score tally
 const playerScore = 0
 const computerScore = 0 ;
 
