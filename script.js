@@ -1,6 +1,6 @@
 // 1. make random number generator function between 1 and 3 to randomize computer choice
 
-// 2. Create function to exexuate a round and returns results 
+// 2. Create function to excute a round and returns results 
 
 //3. Use results from round in game function that allows function to keep score 
 
@@ -24,7 +24,7 @@ function getComputerChoice(selection){
    
 }
 
-
+//console.log(getComputerChoice(3))
 
 //function playerSelection(){
     
@@ -41,35 +41,44 @@ function singleRound(playerSelection, computerSelection){
     
     // if statements for multiple round scenarios 
     if (playerSelection === 'Rock' && computerSelection === 'Paper'){
-        return "You lost" + computerSelection + "beats"+ playerSelection
+        return "You lost " + computerSelection + " beats "+ playerSelection
     }
 
     else if(playerSelection === 'Rock' && computerSelection === 'Scissors'){
-        return "You won" + computerSelection + "losses to"+ playerSelection
+        return " You won " + computerSelection + " losses to "+ playerSelection
     }
+     else if(playerSelection === 'Rock' && computerSelection === 'Rock'){
+        return "You both picked Rock, try again"
+     }
     else if(playerSelection === 'Scissors' && computerSelection === 'Rock'){
-        return "You lost" + computerSelection + "beats"+ playerSelection
+        return "You lost " + computerSelection + " beats "+ playerSelection
     }
     else if(playerSelection === 'Scissors' && computerSelection === 'Paper'){
-        return "You won" + computerSelection + "loses to"+ playerSelection
+        return "You won " + computerSelection + " loses to "+ playerSelection
     }
+     else if(playerSelection === 'Scissors' && computerSelection === 'Scissors'){
+        return "You both picked Scissors, try again"
+     }
     else if(playerSelection === 'Paper' && computerSelection === 'Scissors'){
-        return "You lost" + computerSelection + "beats"+ playerSelection
+        return "You lost " + computerSelection + " beats "+ playerSelection
     }
     else if(playerSelection === 'Paper' && computerSelection === 'Rock'){
-        return "You won" + computerSelection + "losses"+ playerSelection
+        return "You won " + computerSelection + " losses "+ playerSelection
     }
+    else if(playerSelection === 'Papers' && computerSelection === 'Paper'){
+        return "You both picked Scissors, try again"
+     }
     else
-        return "Try again"
+        return "You've entered an invalid input, try again"
 }
 
 //Declare computer and user choices
 const computerSelection = getComputerChoice(3)
 const playerSelection = prompt("Please select  rock paper or scissors")
+console.log(singleRound(playerSelection, computerSelection))
 
 
-
-// Score tally
+/*/ Score tally
 const playerScore = 0
 const computerScore = 0 ;
 
@@ -77,9 +86,10 @@ const computerScore = 0 ;
 function game(){
     
     for (let i=0; i<5;i++){
-        singleRound('Rock', getComputerChoice(3))
-        if 
+        let round = singleRound('Rock', getComputerChoice(3))
+        if round === 
+            Try again 
     }
     
 }
-
+*/
