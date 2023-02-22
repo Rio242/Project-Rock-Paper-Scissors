@@ -73,23 +73,33 @@ function singleRound(playerSelection, computerSelection){
 }
 
 //Declare computer and user choices
-const computerSelection = getComputerChoice(3)
+/*const computerSelection = getComputerChoice(3)
 const playerSelection = prompt("Please select  rock paper or scissors")
-console.log(singleRound(playerSelection, computerSelection))
+console.log(singleRound(playerSelection, computerSelection).slice(0,5))*/
 
 
-/* Score tally
-const playerScore = 0
-const computerScore = 0 ;
-*/
+// Score tally
+let playerScore = 0
+let computerScore = 0 ;
+
 
 function game(){
-    
+
     for (let i=0; i<5;i++){
-        let round = singleRound('Rock', getComputerChoice(3))
-        if round === 
-            Try again 
+        const playerSelection = prompt("Please select  rock paper or scissors")
+        let round = singleRound(playerSelection,         
+        getComputerChoice(3))
+        if (round.slice(0,5) === "You w"){
+            playerScore +=1
+        }
+        else if (round.slice(0,5) === "You l"){
+            computerScore +=1
+        }  
+        console.log(playerScore) 
+        console.log(computerScore) 
     }
-    
+    console.log(playerScore) 
+    console.log(computerScore) 
 }
 
+game()
