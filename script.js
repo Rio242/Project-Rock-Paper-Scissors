@@ -65,7 +65,7 @@ function singleRound(playerSelection, computerSelection){
     else if(playerSelection === 'Paper' && computerSelection === 'Rock'){
         return "You won " + computerSelection + " losses "+ playerSelection
     }
-    else if(playerSelection === 'Papers' && computerSelection === 'Paper'){
+    else if(playerSelection === 'Paper' && computerSelection === 'Paper'){
         return "You both picked Scissors, try again"
      }
     else
@@ -78,10 +78,10 @@ const playerSelection = prompt("Please select  rock paper or scissors")
 console.log(singleRound(playerSelection, computerSelection))
 
 
-/*/ Score tally
+/* Score tally
 const playerScore = 0
 const computerScore = 0 ;
-
+*/
 
 function game(){
     
@@ -92,4 +92,4 @@ function game(){
     }
     
 }
-*/
+
